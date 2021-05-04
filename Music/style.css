@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@600&display=swap');
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+body{
+    background: radial-gradient(#FFFEFE 0%,#9C9C9C 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100vh;
+}
+nav{
+    position: relative;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -31%;
+    
+}
+li{
+    list-style: none;
+    margin:5vh;
+}
+.popins{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+.login{
+    font-family: 'Pridi', serif;
+}
+.logo{
+    padding: 3vh;
+    border: 5px solid #3C3C3C;
+    display: inline;
+    position: absolute;
+    top: 3vh;
+    left: 7vh;
+    border-radius: 30vh;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 25px solid #2D2B2B;
+    display: inherit;
+    transform: rotate(90deg);
+    position: relative;
+    left: 4px;
+}
+.h1{
+    position: absolute;
+    top: 4vh;
+    left: 23vh;
+    font-family: 'Yellowtail', cursive;
+    font-size: 42px;
+    color:#000000;
+}
+.login{
+    padding: 1vh 3vh;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to left,#726CEF 0%,#AF57D6 100%);
+    color: #EAE9E9;
+    cursor: pointer;
+}
+.login:hover{
+    background: linear-gradient(to left,#5752b6 0%,#8543a1 100%);
+}
+.girl-cir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.girl-cir h1{
+    position: absolute;
+}
+.circle{
+    padding: 10vh;
+    background: linear-gradient(to bottom,#5B74F9 0%,#D44BC7 100%);
+    position: absolute;
+    border-radius: 30vh;
+    top: 15vh;
+    left: 90vh;
+    z-index: -1;
+    animation: circle 0.6s ease-out forwards;
+}
+#l1{
+    font-size: 96px;
+    color: #323232;
+    position: absolute;
+    top: 40vh;
+    left: 8vh;
+    transform:translateX(-125vh);
+    animation: l1 0.6s ease-out forwards;
+}
+#l2{
+    font-size: 120px;
+    background: linear-gradient(to bottom, #6768FF 0%,#AF59D7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    right: 32vh;
+    transform:translateX(125vh);
+    animation: l1 0.6s ease-out forwards;
+}
+.girl img{
+    opacity: 0;
+    animation: opa 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+}
+@keyframes circle {
+    from{
+
+    }
+    to{
+        top: 11vh;
+        left: 82vh;
+        padding: 18vh;
+    }
+
+}
+@keyframes l1{
+    from{
+    }
+    to{
+        transform: translateX(0);
+    }
+
+}
+@keyframes opa{
+    from{
+    }
+    to{
+        opacity: 1;
+    }
+
+}
